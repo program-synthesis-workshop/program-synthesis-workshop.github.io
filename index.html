@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Synthesis Workshop @ GECCO 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf9f7;
+      --text: #1a1a1a;
+      --text-muted: #5c5c5c;
+      --accent: #2d5a4a;
+      --accent-light: #3d7a65;
+      --border: #e5e3df;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 400;
+      margin: 0 0 0.5rem;
+      color: var(--text);
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.35rem 0.85rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(45, 90, 74, 0.08);
+      border-radius: 4px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      margin: 2.25rem 0 1rem;
+      color: var(--text);
+    }
+
+    p {
+      margin: 0 0 1rem;
+      color: var(--text);
+    }
+
+    ul {
+      margin: 0 0 1rem;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--accent-light);
+      text-decoration: underline;
+    }
+
+    .dates {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .dates p {
+      margin: 0.25rem 0;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      font-weight: 600;
+      font-size: 0.9375rem;
+      color: white;
+      background: var(--accent);
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .cta:hover {
+      background: var(--accent-light);
+      text-decoration: none;
+    }
+
+    .organizers {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .organizer {
+      font-size: 0.9375rem;
+    }
+
+    .organizer strong {
+      font-weight: 600;
+    }
+
+    .organizer a {
+      font-size: 0.875rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    .hashtags {
+      margin-top: 1rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">1st Workshop</span>
+      <h1>Program Synthesis Workshop</h1>
+      <p class="subtitle">Genetic and Evolutionary Computation Conference (GECCO'26)</p>
+      <p class="subtitle">San Jose, Costa Rica · July 13–17, 2026</p>
+    </header>
+
+    <section>
+      <h2>Scope</h2>
+      <p>
+        Program Synthesis (PS) is the task of automatically generating executable programs from high-level specifications, such as logical constraints, input-output examples, or natural language descriptions. Inside the evolutionary community, PS is often seen as an established application of Genetic Programming (GP), but the broader PS community has developed a variety of different approaches, ranging from program enumeration with constraints, to Monte-Carlo tree search, to Large Language Models (LLMs). In recent years, hybrid approaches combining different techniques have begun to emerge, pushing PS towards better and better results.
+      </p>
+      <p>
+        A recent publication in the 2025 Genetic Programming: Theory and Practice conference, authored by one of organizers of this workshop, advocated for building a bridge between the evolutionary community and non-evolutionary approaches to PS. Following this idea, this workshop aims to encourage the evolutionary community to focus more on PS, at the same time, creating bridges with other PS approaches, in the hope of obtaining even more performing hybrid forms.
+      </p>
+    </section>
+
+    <section>
+      <h2>Topics</h2>
+      <p>The scope of the workshop includes, but is not limited to, the following PS-related topics:</p>
+      <ul>
+        <li>GP Representations for Program Synthesis (e.g., Tree-based, Linear, Graph)</li>
+        <li>Fitness functions (Single vs Multi-objective, Test Integration, Coverage, Specification fulfillment)</li>
+        <li>Formal methods for Program Synthesis</li>
+        <li>Inductive logic programming</li>
+        <li>Deductive Program Synthesis</li>
+        <li>LLM-based Program Synthesis</li>
+        <li>Agentic approach for Program Synthesis</li>
+        <li>Hybrid methods for Program Synthesis</li>
+        <li>Program Benchmarks</li>
+        <li>Program Synthesis for general AI tasks, such as the Abstraction and Reasoning Corpus</li>
+        <li>Non-conventional applications (e.g., theorem proving, infrastructure configuration)</li>
+        <li>Real-world applications of Program Synthesis</li>
+      </ul>
+      <p>The workshop will also include a tutorial/intervention aimed at introducing non-evolutionary program synthesis techniques to the GECCO audience.</p>
+    </section>
+
+    <section>
+      <h2>Instructions for Authors</h2>
+      <p>We invite submissions of two types of papers:</p>
+      <ol>
+        <li><strong>Regular papers</strong> (limit 8 pages, due to ACM regulations will have to pay Article Processing Charges, unless the corresponding author is part of an <a href="https://www.acm.org/publications/open-access/institutions" target="_blank" rel="noopener">ACM Open Institution</a>)</li>
+        <li><strong>Extended abstracts</strong> (limit 4 pages, exempt from paying Article Processing Charges)</li>
+      </ol>
+      <p>Papers should present original work that meets the high-quality standards of GECCO. Each paper will be rigorously evaluated in a review process. Accepted papers appear in the ACM digital library as part of the Companion Proceedings of GECCO. Each paper accepted needs to have at least one author registered by the author registration deadline.</p>
+      <p>Papers must be submitted via the online submission system. Please refer to the GECCO 2026 website for detailed instructions.</p>
+    </section>
+
+    <section>
+      <h2>Important Dates</h2>
+      <div class="dates">
+        <p><strong>Paper Submission Deadline:</strong> March 26, 2026 (TBC)</p>
+        <p><strong>Conference:</strong> July 13–17, 2026</p>
+      </div>
+      <a href="https://ssl.linklings.net/conferences/gecco/" class="cta" target="_blank" rel="noopener">Submit your paper →</a>
+      <p style="margin-top: 1rem; font-size: 0.9375rem;">
+        <a href="https://gecco-2026.sigevo.org/Paper+Submission+Instructions" target="_blank" rel="noopener">Paper submission instructions</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Organizers</h2>
+      <div class="organizers">
+        <div class="organizer">
+          <strong>Alcides Fonseca</strong>, University of Lisbon, Portugal<br>
+          <a href="mailto:amfonseca@ciencias.ulisboa.pt">amfonseca@ciencias.ulisboa.pt</a>
+        </div>
+        <div class="organizer">
+          <strong>Fabricio Olivetti de França</strong>, Universidade Federal do ABC, Brazil<br>
+          <a href="mailto:folivetti@ufabc.edu.br">folivetti@ufabc.edu.br</a>
+        </div>
+        <div class="organizer">
+          <strong>Giovanni Squillero</strong>, Politecnico di Torino, Italy<br>
+          <a href="mailto:giovanni.squillero@polito.it">giovanni.squillero@polito.it</a>
+        </div>
+        <div class="organizer">
+          <strong>Alberto Tonda</strong>, Université Paris-Saclay, INRAE, France<br>
+          <a href="mailto:alberto.tonda@inrae.fr">alberto.tonda@inrae.fr</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Program Synthesis Workshop · GECCO 2026 · San Jose, Costa Rica</p>
+      <p class="hashtags">#ProgramSynthesis #GeneticProgramming #GECCO2026 #LLMs #AI #EvolutionaryComputation</p>
+    </footer>
+  </div>
+</body>
+</html>
